@@ -43,9 +43,17 @@
     "ignoreDeprecations": "6.0",
     "moduleResolution": "NodeNext",
     "allowImportingTsExtensions": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": true
   },
 
   "include": ["src/**/*"],
+  "texttimModuleSyntax" : false,
   "exclude": ["node_modules", "build"]
 }
+
+// caso de erro de importação, usar o comando abaixo para rodar o servidor
+// "dev": "node --loader ts-node/esm -r tsconfig-paths/register --inspect src/shared/http/server.ts",
