@@ -6,7 +6,7 @@ interface IShowProduct {
   id: string;
 }
 
-export default class showProductService {
+export default class ShowProductService {
   async execute({ id }: IShowProduct): Promise<Product> {
     const product = await productsRepositories.findById(id)
 
